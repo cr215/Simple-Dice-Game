@@ -5,7 +5,7 @@
 // randomNumber1 = randomNumber1*6;
 // randomNumber1 = Math.floor(randomNumber1) + 1;
 
-// console.log(randomNumber1);
+// console.log(randomNumber1); .
 
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;  // random number 1 - 6.
 
