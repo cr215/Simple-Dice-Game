@@ -1,16 +1,15 @@
+/* General Styling from original file */
 .container {
-  width: 70%;
+  width: 90%;
+  max-width: 960px;
   margin: auto;
   text-align: center;
 }
 
-
-
-
 .dice {
   text-align: center;
   display: inline-block;
-
+  margin: 0 25px;
 }
 
 body {
@@ -21,7 +20,7 @@ h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 2px 5px #232931;
-  font-size: 6rem;
+  font-size: 5rem; /* Slightly reduced for better mobile view */
   color: #4ECCA3;
 }
 
@@ -31,21 +30,9 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
-
-.btn button{
-  font-size: 25px;
-  font-weight: 700;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #4ECCA3;
-  background-color: #9c060c;
-  border: none;
-}
-
-
 img {
-  width: 80%;
+  width: 150px; /* Fixed size for consistency */
+  height: 150px;
 }
 
 footer {
@@ -53,10 +40,61 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
 }
 
-footer a{
+footer a {
   color: #4ECCA3;
   text-decoration: none;
+}
+
+
+/* --- NEW STYLES for Scorekeeper & Buttons --- */
+
+.score-container {
+  font-size: 2.5rem;
+  color: #EEEEEE;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 20px;
+}
+
+.score-container p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.dice-container {
+    margin-bottom: 30px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between buttons */
+}
+
+.btn {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #4ECCA3;
+  background-color: #9c060c;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .dice {
+        display: block;
+        margin: 20px auto;
+    }
 }
